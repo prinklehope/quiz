@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* A more modern font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* Dark theme background */
+    color: #e0e0e0; /* Light grey text for contrast */
+}
+
+.container {
+    text-align: center;
+    max-width: 800px; /* Limit the width for larger screens */
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px; /* Slightly larger for a better touch target */
+    margin: 10px;
+    color: #ffffff;
+    background-color: #6200ee; /* A more vibrant primary color */
+    text-decoration: none;
+    border-radius: 8px; /* More rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth scale transition */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.btn:hover {
+    background-color: #3700b3; /* Darker shade for hover state */
+    transform: scale(1.05); /* Slightly enlarge buttons on hover */
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px; /* Add space between the title and buttons */
+}
+
+#quiz-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #bb86fc; /* Soft purple for a unique accent */
+    font-size: 2rem; /* Larger font size for prominence */
+}
+
+@media (max-width: 768px) {
+    .top-right-buttons a {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+    
+    #home {
+        flex-direction: column;
+    }
+    
+    #quiz-title {
+        font-size: 1.5rem; /* Adjust title size for smaller screens */
+    }
+}
